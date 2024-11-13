@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <style>
+      body {
+        margin: 0
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 100px; height: 100px; background: #FAA" draggable="true" id="box"></div>
+  </body>
+  <script>
+    const box = document.getElementById('box');
+    const body = document.body;
+    body.addEventListener('dragstart', console.log.bind(console, 'dragstart'));
+    body.addEventListener('dragend', console.log.bind(console, 'dragend'));
+    box.addEventListener('pointerleave', console.log.bind(console, 'pointerleave'));
+  </script>
+</html>
