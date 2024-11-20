@@ -2,7 +2,7 @@
 	"source": "index.html",
 	"scripts": {
 		"start": "parcel --dist-dir=dist/dev",
-		"build": "parcel build"
+		"build": "parcel build --public-url=./"
 	},
 	"dependencies": {
 		"@types/react": "^18.3.12",
