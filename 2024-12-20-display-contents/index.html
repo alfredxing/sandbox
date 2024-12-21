@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>display: contents rendering</title>
+	</head>
+	<body style="margin: 0">
+		<div
+			style="
+				color: rgb(55, 53, 47);
+				fill: currentcolor;
+				line-height: 1.5;
+				font-family:
+					ui-sans-serif,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI Variable Display',
+					'Segoe UI',
+					Helvetica,
+					'Apple Color Emoji',
+					Arial,
+					sans-serif,
+					'Segoe UI Emoji',
+					'Segoe UI Symbol';
+			"
+		>
+			<div
+				class="notion-topbar-mobile"
+				style="
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 100%;
+					max-width: 100vw;
+					height: 44px;
+					margin-top: env(safe-area-inset-top);
+					padding-left: calc(0px + env(safe-area-inset-left));
+					padding-right: calc(0px + env(safe-area-inset-right));
+					background: white;
+					transition: box-shadow 300ms;
+					-webkit-user-select: none;
+					cursor: pointer;
+				"
+			>
+				<div
+					role="button"
+					tabindex="0"
+					style="
+						-webkit-user-select: none;
+						transition: background 20ms ease-in;
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+						padding-left: 20px;
+						padding-right: 12px;
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 22px;
+						white-space: nowrap;
+						min-width: 0px;
+						color: rgb(29, 27, 22);
+					"
+				>
+					<div
+						style="
+							margin-right: 8px;
+							height: 32px;
+							width: 32px;
+							background-color: rgba(227, 226, 224, 0.5);
+							display: inline-flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 4px;
+						"
+					>
+						<svg
+							role="graphics-symbol"
+							viewBox="0 0 16 16"
+							class="folder"
+							style="
+								width: 16px;
+								height: 100%;
+								display: block;
+								fill: inherit;
+								flex-shrink: 0;
+								color: rgb(50, 48, 44);
+							"
+						>
+							<path
+								d="M2.4082 14.3672H13.7627C15.0684 14.3672 15.8271 13.6084 15.8271 12.1455V5.11816C15.8271 3.65527 15.0615 2.89648 13.585 2.89648H7.22754C6.73535 2.89648 6.44824 2.78027 6.07227 2.47266L5.67578 2.1582C5.19727 1.76172 4.8418 1.63184 4.13086 1.63184H2.19629C0.917969 1.63184 0.166016 2.37695 0.166016 3.8125V12.1455C0.166016 13.6084 0.931641 14.3672 2.4082 14.3672ZM1.50586 3.92871C1.50586 3.2998 1.84766 2.97168 2.46289 2.97168H3.77539C4.26074 2.97168 4.54102 3.08105 4.92383 3.39551L5.32031 3.7168C5.79199 4.10645 6.16113 4.23633 6.87207 4.23633H13.5098C14.1387 4.23633 14.4873 4.56445 14.4873 5.23438V5.63086H1.50586V3.92871ZM2.49023 13.0273C1.85449 13.0273 1.50586 12.6992 1.50586 12.0361V6.81348H14.4873V12.0361C14.4873 12.6992 14.1387 13.0273 13.5098 13.0273H2.49023Z"
+							></path>
+						</svg>
+					</div>
+					Private
+				</div>
+				<div
+					style="
+						display: flex;
+						align-items: center;
+						height: 100%;
+						margin-left: auto;
+						padding-left: 0px;
+						padding-right: 0px;
+						visibility: hidden;
+					"
+				></div>
+				<div data-popup-origin="true" style="display: contents" data-display-contents>
+					<div
+						role="button"
+						tabindex="0"
+						class="notion-topbar-share-menu"
+						id="topbar-share-button"
+						aria-label="Share"
+						style="
+							-webkit-user-select: none;
+							transition: background 20ms ease-in;
+							cursor: pointer;
+							display: flex;
+							align-items: center;
+							flex-shrink: 0;
+							white-space: nowrap;
+							height: 100%;
+							border-radius: 6px;
+							font-size: 14px;
+							line-height: 1.2;
+							min-width: 0px;
+							padding-left: 8px;
+							padding-right: 8px;
+							color: rgb(145, 145, 142);
+							justify-content: center;
+							margin-right: 14px;
+							width: 26px;
+						"
+					>
+						<svg
+							role="graphics-symbol"
+							viewBox="0 0 26 26"
+							class="iOSShare"
+							style="
+								width: 26px;
+								height: 26px;
+								display: block;
+								fill: rgb(50, 48, 44);
+								flex-shrink: 0;
+							"
+						>
+							<path
+								d="M16.2498 7.04938C15.8356 7.04938 15.4998 7.38517 15.4998 7.79938C15.4998 8.2136 15.8356 8.54938 16.2498 8.54938V7.04938ZM9.74984 8.54938C10.164 8.54938 10.4998 8.2136 10.4998 7.79938C10.4998 7.38517 10.164 7.04938 9.74984 7.04938V8.54938ZM12.2499 15.5994C12.2499 16.0136 12.5857 16.3494 12.9999 16.3494C13.4141 16.3494 13.7499 16.0136 13.7499 15.5994H12.2499ZM13.7499 1.29938C13.7499 0.88517 13.4141 0.549384 12.9999 0.549384C12.5857 0.549384 12.2499 0.88517 12.2499 1.29938H13.7499ZM8.89451 4.01942C8.60161 4.31231 8.60161 4.78718 8.89451 5.08008C9.1874 5.37297 9.66227 5.37297 9.95517 5.08008L8.89451 4.01942ZM12.9998 0.974747L13.5302 0.444417C13.2373 0.151523 12.7624 0.151523 12.4695 0.444417L12.9998 0.974747ZM16.0445 5.08008C16.3374 5.37297 16.8123 5.37297 17.1052 5.08008C17.3981 4.78718 17.3981 4.31231 17.1052 4.01942L16.0445 5.08008ZM16.2498 8.54938H18.8498V7.04938H16.2498V8.54938ZM18.8498 8.54938C19.8716 8.54938 20.6998 9.37766 20.6998 10.3994H22.1998C22.1998 8.54923 20.7 7.04938 18.8498 7.04938V8.54938ZM20.6998 10.3994V19.8244H22.1998V10.3994H20.6998ZM20.6998 19.8244C20.6998 20.8461 19.8716 21.6744 18.8498 21.6744V23.1744C20.7 23.1744 22.1998 21.6745 22.1998 19.8244H20.6998ZM18.8498 21.6744H7.14984V23.1744H18.8498V21.6744ZM7.14984 21.6744C6.12811 21.6744 5.29984 20.8461 5.29984 19.8244H3.79984C3.79984 21.6745 5.29968 23.1744 7.14984 23.1744V21.6744ZM5.29984 19.8244V10.3994H3.79984V19.8244H5.29984ZM5.29984 10.3994C5.29984 9.37766 6.12811 8.54938 7.14984 8.54938V7.04938C5.29968 7.04938 3.79984 8.54923 3.79984 10.3994H5.29984ZM7.14984 8.54938H9.74984V7.04938H7.14984V8.54938ZM13.7499 15.5994V1.29938H12.2499V15.5994H13.7499ZM9.95517 5.08008L13.5302 1.50508L12.4695 0.444417L8.89451 4.01942L9.95517 5.08008ZM12.4695 1.50508L16.0445 5.08008L17.1052 4.01942L13.5302 0.444417L12.4695 1.50508Z"
+							></path>
+						</svg>
+					</div>
+				</div>
+				<div data-popup-origin="true" style="display: contents" data-display-contents>
+					<div
+						role="button"
+						tabindex="0"
+						class="notion-topbar-more-button"
+						aria-label="Actions"
+						style="
+							-webkit-user-select: none;
+							transition: background 20ms ease-in;
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							height: 100%;
+							margin-right: 14px;
+							color: rgb(145, 145, 142);
+							width: 26px;
+						"
+					>
+						&nbsp;<svg
+							role="graphics-symbol"
+							viewBox="0 0 26 26"
+							class="mobileQuickCaptureMore"
+							style="
+								width: 26px;
+								height: 26px;
+								display: block;
+								fill: rgb(50, 48, 44);
+								flex-shrink: 0;
+							"
+						>
+							<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M4.56552 14.857C5.59119 14.857 6.42266 14.0255 6.42266 12.9999C6.42266 11.9742 5.59119 11.1427 4.56552 11.1427C3.53985 11.1427 2.70837 11.9742 2.70837 12.9999C2.70837 14.0255 3.53985 14.857 4.56552 14.857Z"
+								></path>
+								<path
+									d="M20.2917 14.8571C21.3174 14.8571 22.1489 14.0257 22.1489 13C22.1489 11.9743 21.3174 11.1429 20.2917 11.1429C19.2661 11.1429 18.4346 11.9743 18.4346 13C18.4346 14.0257 19.2661 14.8571 20.2917 14.8571Z"
+								></path>
+								<path
+									d="M12.4283 14.8571C13.454 14.8571 14.2855 14.0257 14.2855 13C14.2855 11.9743 13.454 11.1429 12.4283 11.1429C11.4027 11.1429 10.5712 11.9743 10.5712 13C10.5712 14.0257 11.4027 14.8571 12.4283 14.8571Z"
+								></path>
+							</svg>
+						</svg>
+					</div>
+				</div>
+				<div
+					role="button"
+					tabindex="0"
+					style="
+						-webkit-user-select: none;
+						transition: background 20ms ease-in;
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+						height: 32px;
+						padding-left: 12px;
+						padding-right: 12px;
+						margin-left: 2px;
+						margin-right: 16px;
+						font-weight: 500;
+						color: rgb(29, 27, 22);
+						background: rgba(227, 226, 224, 0.5);
+						border-radius: 16px;
+					"
+				>
+					Done
+				</div>
+				<div style="width: 4px"></div>
+			</div>
+		</div>
+		<button id="button">Remove icons</button>
+		<script type="text/javascript">
+			document.getElementById('button').addEventListener('click', () => {
+				document.querySelectorAll('[data-display-contents]').forEach((node) => node.remove());
+			});
+		</script>
+	</body>
+</html>
