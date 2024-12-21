@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>display: contents rendering</title>
 	</head>
-	<body style="margin: 0; font-family: ui-sans-serif">
+	<body style="font-family: ui-sans-serif; font-size: 14px; line-height: 1.4">
 		<div class="notion-topbar-mobile" style="height: 44px">
 			<div data-popup-origin="true" style="display: contents" data-display-contents>
 				<img
@@ -21,11 +21,29 @@
 			<div data-popup-origin="true" style="display: contents" data-display-contents>
 				<img
 					src="https://emoji.slack-edge.com/T063KNMBD8W/concerned/c1adbaf7f8a0fd14.png"
-					style="width: 26px; height: 26px; display: block; transform: translateZ(0)"
+					style="width: 26px; height: 26px; display: block; will-change: transform"
 				/>
 			</div>
 		</div>
-		<button id="button">Remove icon</button>
+		<p style="margin-top: 78px">
+			Click me to remove the <code>display: contents</code> icons:
+			<button id="button">Remove icon</button>
+		</p>
+		<div>
+			<p>Note:</p>
+			<ul>
+				<li>
+					The first two icons get removed from DOM but remain on screen, exhibiting the buggy
+					behaviour
+				</li>
+				<li>The first icon is a PNG image; the second is an inline SVG</li>
+				<li>
+					The third icon is the same PNG image as the first, but has
+					<code>will-change: transform</code>
+					applied to force it onto its own layer
+				</li>
+			</ul>
+		</div>
 		<script type="text/javascript">
 			document.getElementById('button').addEventListener('click', () => {
 				document.querySelectorAll('[data-display-contents]').forEach((node) => node.remove());
